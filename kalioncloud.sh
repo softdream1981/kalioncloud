@@ -8,11 +8,5 @@ echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/a
 apt update -y
 apt upgrade -y 
 apt update -y
-apt install -y kali-desktop-xfce
 apt install -y kali-tools-top10
-
-apt install -y kali-desktop-xfce xrdp
-sudo systemctl enable xrdp --now
-sudo /etc/init.d/xrdp start
-
 echo "[+] Installation done, Enjoy!"
